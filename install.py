@@ -10,11 +10,14 @@ def make_link(filename):
     # symbolic link to filename.
 
     target = os.path.expanduser('~/%s' % filename)
+    fullname = os.path.join(os.getcwd(), filename) 
 
-    if (os.path.exists(target)):
-            os.rename(target, target + '.old')
+    if (os.path.islink(target)):
+        os.remove(target)
+    elif (os.path.exists(target)):
+        os.rename(target, target + '.old')
 
-    os.symlink(filename, target)
+    os.symlink(fullname, target)
 
 
 if __name__ == "__main__":
