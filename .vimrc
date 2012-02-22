@@ -1,4 +1,9 @@
-
+" 
+"	VIM rc
+"	 
+"	David de Klerk
+"
+"
 colorscheme slate
 
 
@@ -6,8 +11,8 @@ set nocompatible                    " Turn off compatibility mode.
 set nowrap                          " Turn off line wrapping.
 set ai                              " Turn on auto indentation.
 set tabstop=4                       " Set tab size to 4.
-set expandtab                       " 
-set nu                              " Turn line nubering on.
+"set expandtab                       " Insert spaces instead of tabs.
+set number                          " Turn line nubering on.
 set backspace=indent,eol,start      " Make backspace sane.
 set hlsearch                        " Highlight search terms.
 
@@ -21,10 +26,15 @@ filetype plugin indent on
 command W w                         " Write on :W
 
 
-" Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
-nnoremap <silent> <M-F12> :BufExplorer<CR>
-nnoremap <silent> <F12> :bn<CR>
-nnoremap <silent> <S-F12> :bp<CR>
+" Leader maps
+let mapleader = ","
+
+map <Leader>p <C-w>w
+
+" Buffers - explore/next/previous.
+nnoremap <silent> <Leader>,     :BufExplorer<CR>
+nnoremap <silent> <Leader>.     :bn<CR>
+nnoremap <silent> <Leader>'     :bp<CR>
 
 
 "command Run ! python %
