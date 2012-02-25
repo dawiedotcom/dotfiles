@@ -9,7 +9,7 @@ colorscheme slate
 
 set nocompatible                    " Turn off compatibility mode.
 set nowrap                          " Turn off line wrapping.
-set ai                              " Turn on auto indentation.
+set autoindent                      " Turn on auto indentation.
 set tabstop=4                       " Set tab size to 4.
 set shiftwidth=4
 "set expandtab                       " Insert spaces instead of tabs.

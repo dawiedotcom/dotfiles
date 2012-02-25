@@ -2,14 +2,14 @@
 import os
 
 # Files and directories that should not be linked.
-ignore = ['.git', 'README.md', '.vim', 'install.py'] 
+ignore = ['.git', 'README.md', 'install.py'] 
 
 
 def make_link(filename):
     # Make a backup of the old file and replace it with a 
     # symbolic link to filename.
 
-    target = os.path.expanduser('~/%s' % filename)
+    target = os.path.expanduser('~/.%s' % filename)
     fullname = os.path.join(os.getcwd(), filename) 
 
     if (os.path.islink(target)):
