@@ -44,6 +44,11 @@ nnoremap <silent> <Leader>.     :bn<CR>
 nnoremap <silent> <Leader>'     :bp<CR>
 
 
+" General hacks
+vnoremap < <gv						|" Reselect a visual block after indent.	
+vnoremap > >gv
+
+
 "command Run ! python %
 
 "if !exists("autocommands_loaded")
