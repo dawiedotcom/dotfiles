@@ -16,6 +16,7 @@ set shiftwidth=4
 set number                          " Turn line nubering on.
 set backspace=indent,eol,start      " Make backspace sane.
 set hlsearch                        " Highlight search terms.
+set wildmenu						" This is just awesome.
 
 " Switch syntax highlighting on
 syntax on
@@ -35,6 +36,7 @@ map <Leader>a 	GA
 map <Leader>o	GO
 map <Leader>y	GY``kp
 map <Leader>d	Gdd``kp
+map <Leader>/	^i//<Esc>
 
 
 
