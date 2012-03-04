@@ -1,8 +1,7 @@
-" 
-"	VIM rc
-"	 
-"	David de Klerk
 "
+"	VIM rc	 
+"	David de Klerk
+"	https://github.com/dawiedotcom/dotfiles/blob/master/vimrc
 "
 colorscheme slate
 
@@ -31,32 +30,29 @@ command W w                         " Write on :W
 " Leader maps
 let mapleader = ","
 
+" Switching between splits
 map <Leader>p 	<C-w>w
+" Switching between buffers
+nnoremap <Leader>,     :BufExplorer<CR>
+nnoremap <Leader>.     :bn<CR>
+nnoremap <Leader>'     :bp<CR>
+" Move to and change to insert mode
 map <Leader>a 	GA
 map <Leader>o	GO
+" Copy/Move lines
 map <Leader>y	GY``kp
 map <Leader>d	Gdd``kp
+" Insert C-like and python comment at the beginning of the line
+" TODO	check the file type.
 map <Leader>/	^i//<Esc>
-
-
-
-" Buffers - explore/next/previous.
-nnoremap <silent> <Leader>,     :BufExplorer<CR>
-nnoremap <silent> <Leader>.     :bn<CR>
-nnoremap <silent> <Leader>'     :bp<CR>
+map <Leader>3	^i#<Esc>
 
 
 " General hacks
-vnoremap < <gv						|" Reselect a visual block after indent.	
-vnoremap > >gv
+" Reselect a visual block after indent.	
+vnoremap < 	<gv
+vnoremap > 	>gv
+" Increment/decrement on + and -
+nnoremap +  <C-a>
+nnoremap -  <C-x>
 
-
-"command Run ! python %
-
-"if !exists("autocommands_loaded")
-"  let autocommands_loaded = 1
-"  autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/python
-"endif
-
-" This beauty remembers where you were the last time you edited the file, and returns to the same position.
-"au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
