@@ -16,6 +16,7 @@ set number                          " Turn line nubering on.
 set backspace=indent,eol,start      " Make backspace sane.
 set hlsearch                        " Highlight search terms.
 set wildmenu						" This is just awesome.
+set winwidth=100					" Set the minimum window width.
 
 " Switch syntax highlighting on
 syntax on
@@ -56,3 +57,13 @@ vnoremap > 	>gv
 nnoremap +  <C-a>
 nnoremap -  <C-x>
 
+" Map omnicomplete to <C-space> 
+inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+\ "\<lt>C-n>" :
+\ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+\ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+\ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+imap <C-@> <C-Space>
+
+
+map <C-F6> :run ctags -R --c#-kinds=cimnp --fields=+ianmzS --extra=+fq .<CR>
