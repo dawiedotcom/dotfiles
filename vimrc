@@ -47,15 +47,16 @@ map <Leader>d	Gdd``kp
 " TODO	check the file type.
 map <Leader>/	^i//<Esc>
 map <Leader>3	^i#<Esc>
-
-
-" General hacks
-" Reselect a visual block after indent.	
-vnoremap < 	<gv
-vnoremap > 	>gv
 " Increment/decrement on + and -
 nnoremap +  <C-a>
 nnoremap -  <C-x>
+
+" General hacks
+" Reselect a visual block after indent.	
+" 	http://vimbits.com/bits/20
+"vnoremap < 	<gv
+"vnoremap > 	>gv
+
 
 " Map omnicomplete to <C-space> 
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
@@ -67,3 +68,13 @@ imap <C-@> <C-Space>
 
 
 map <C-F6> :run ctags -R --c#-kinds=cimnp --fields=+ianmzS --extra=+fq .<CR>
+
+" automatically reload vimrc when it's saved
+" 	http://vimbits.com/bits/128
+" 	https://gist.github.com/1988620
+"au BufWritePost .vimrc so ~/.vimrc
+augroup AutoReloadVimRC
+  au!
+  " automatically reload vimrc when it's saved
+  au BufWritePost $MYVIMRC so $MYVIMRC
+augroup END
