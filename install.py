@@ -23,7 +23,9 @@ def make_link(filename):
 if __name__ == "__main__":
     
     files = os.listdir('./.')
-    files = filter(lambda s: s not in ignore and s[-3:] != 'swp', files)
+    files = filter(lambda s: s not in ignore, files)
+    files = filter(lambda s: s[-3:] != 'swp', files)
+    files = filter(lambda s: s[0] != '.', files)
 
     for f in files:
         print('Linking: %s' % f)
