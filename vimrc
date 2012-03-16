@@ -50,7 +50,11 @@ map <Leader>3	^i#<Esc>
 " Increment/decrement on + and -
 nnoremap +  <C-a>
 nnoremap -  <C-x>
-
+" Easy spit navigation
+map <C-h>	<C-w>h
+map <C-l>	<C-w>l
+map <C-j>	<C-w>j
+map <C-k>	<C-w>k
 " General hacks
 " Reselect a visual block after indent.	
 " 	http://vimbits.com/bits/20
