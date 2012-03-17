@@ -1,0 +1,4 @@
+[user]
+[github]
+[core]
+	excludesfile = /home/ddk/.gitignore
