@@ -2,7 +2,7 @@
 import os
 
 # Files and directories that should not be linked.
-ignore = ['.git', 'README.md', 'install.py'] 
+ignore = ['README.md', 'install.py'] 
 
 
 def make_link(filename):
@@ -24,9 +24,8 @@ if __name__ == "__main__":
     
     files = os.listdir('./.')
     files = filter(lambda s: s not in ignore, files)
-    files = filter(lambda s: s[-3:] != 'swp', files)
     files = filter(lambda s: s[0] != '.', files)
 
     for f in files:
-        print('Linking: %s' % f)
+        print('Linking: ~/.%s -> %s' % (f,f))
         make_link(f)
