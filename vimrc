@@ -3,7 +3,6 @@
 "	David de Klerk
 "	https://github.com/dawiedotcom/dotfiles/blob/master/vimrc
 "
-colorscheme slate
 
 
 set nocompatible                    " Turn off compatibility mode.
