@@ -16,6 +16,10 @@ set backspace=indent,eol,start      " Make backspace sane.
 set hlsearch                        " Highlight search terms.
 set wildmenu						" This is just awesome.
 set winwidth=100					" Set the minimum window width.
+set cursorline
+
+" Set the satutus line
+set statusline=%t\ [%Y%M]%=LINE:%l/%L
 
 " Switch syntax highlighting on
 syntax on
@@ -24,7 +28,7 @@ syntax on
 filetype plugin indent on
 
 " Cammands
-command W w                         " Write on :W
+nmap W w                         " Write on :W
 
 
 " Leader maps
@@ -81,3 +85,5 @@ augroup AutoReloadVimRC
   " automatically reload vimrc when it's saved
   au BufWritePost $MYVIMRC so $MYVIMRC
 augroup END
+
+
