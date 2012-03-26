@@ -99,3 +99,8 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# Auto update ~/.bash_history
+# from briancarper.net/blog/248/
+export PROMPT_COMMAND="history -n; history -a"
+
