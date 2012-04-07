@@ -28,8 +28,8 @@ syntax on
 filetype plugin indent on
 
 " Cammands
-nmap W w                         " Write on :W
-
+" Write on :W
+command W w    
 
 " Leader maps
 let mapleader = ","
