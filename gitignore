@@ -34,7 +34,13 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
-# Backup files
-*.swp
+# Backup files #
+################
+# Backup files created by vim, gedit, emacs etc.
+*.sw[po]
 *~
+
+# Python #
+##########
+*.py[co]
 
