@@ -86,4 +86,6 @@ augroup AutoReloadVimRC
   au BufWritePost $MYVIMRC so $MYVIMRC
 augroup END
 
-
+" Use pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
