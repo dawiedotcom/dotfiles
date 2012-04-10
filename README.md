@@ -10,4 +10,11 @@ cd dotfiles
 ./install.py
 ```
 
+Some vim packages are included as submodules. To use them do
+
+```bash
+git submodule init
+git submodule update
+```
+
 
