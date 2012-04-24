@@ -17,4 +17,7 @@ git submodule init
 git submodule update
 ```
 
+To use [ack.vim](https://github.com/mileszs/ack.vim) ack must also be 
+installed.
+
 
