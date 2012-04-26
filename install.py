@@ -2,7 +2,7 @@
 import os
 
 # Files and directories that should not be linked.
-ignore = ['README.md', 'install.py'] 
+ignore = ['README.md', 'install.py', 'install-vim-plugins.py', 'plugins.yaml']
 
 
 def make_link(filename):

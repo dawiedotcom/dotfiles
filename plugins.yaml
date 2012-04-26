@@ -1,0 +1,18 @@
+#
+# A list of git repositories for vim plugins, given by
+#
+#   <name>: <repo_url>. 
+#
+# Each plugin will be downloaded to vim/bundle/<name>,
+# where it can be used by vim-pathogen, by adding 
+#
+#   runtime bundle/vim-pathogen/autoload/pathogen.vim
+#   call pathogen#infect()
+#
+# to ~/.vimrc
+vim-pathogen: "https://github.com/tpope/vim-pathogen.git"
+vim-coffee-script: "https://github.com/kchmck/vim-coffee-script.git"
+vim-markdown: "git://github.com/tpope/vim-markdown.git"
+ack.vim: "git://github.com/mileszs/ack.vim.git"
+vim-fugitive: "git://github.com/tpope/vim-fugitive.git"
+
