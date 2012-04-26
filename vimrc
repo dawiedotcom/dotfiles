@@ -19,7 +19,7 @@ set winwidth=100					" Set the minimum window width.
 set cursorline
 
 " Set the satutus line
-set statusline=%t\ [%Y%M]%=LINE:%l/%L
+set statusline=%t\ [%Y%M]\ %{fugitive#statusline()}%=LINE:%l/%L
 
 " Switch syntax highlighting on
 syntax on
@@ -63,6 +63,10 @@ map <C-k>	<C-w>k
 " 	http://vimbits.com/bits/20
 "vnoremap < 	<gv
 "vnoremap > 	>gv
+
+" vim-fugitive short cuts
+map <Leader>gs	:Gstatus<CR>
+map <Leader>gc  :Gcommit<CR>
 
 
 " Map omnicomplete to <C-space> 
