@@ -102,5 +102,7 @@ fi
 
 # Auto update ~/.bash_history
 # from briancarper.net/blog/248/
-export PROMPT_COMMAND="history -n; history -a"
+#export PROMPT_COMMAND="history -n; history -a"
 
+
+[ -s "/home/ddk/.scm_breeze/scm_breeze.sh" ] && source "/home/ddk/.scm_breeze/scm_breeze.sh"

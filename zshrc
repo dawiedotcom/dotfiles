@@ -1,11 +1,13 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-
+SCMB=$HOME/.scm_breeze
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="clean"
+#ZSH_THEME="fino"
+ZSH_THEME="muse"
+#ZSH_THEME="sporty_256"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -35,4 +37,22 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-[ -s "/Users/davidd/.scm_breeze/scm_breeze.sh" ] && source "/Users/davidd/.scm_breeze/scm_breeze.sh"
+[ -s $SCMB/scm_breeze.sh ] && source $SCMB/scm_breeze.sh
+
+#[ -s "/home/ddk/.scm_breeze/scm_breeze.sh" ] && source "/home/ddk/.scm_breeze/scm_breeze.sh"
+
+# History settings
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory
+setopt inc_append_history
+setopt share_history
+
+
+# The following lines were added by compinstall
+zstyle :compinstall filename $HOME/.zshrc
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
