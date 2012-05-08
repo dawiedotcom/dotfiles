@@ -105,4 +105,4 @@ fi
 #export PROMPT_COMMAND="history -n; history -a"
 
 
-[ -s "/home/ddk/.scm_breeze/scm_breeze.sh" ] && source "/home/ddk/.scm_breeze/scm_breeze.sh"
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
