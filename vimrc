@@ -67,6 +67,7 @@ map <C-k>	<C-w>k
 " vim-fugitive short cuts
 map <Leader>gs	:Gstatus<CR>
 map <Leader>gc  :Gcommit<CR>
+command Gw		:Gwrite<CR>
 
 
 " Map omnicomplete to <C-space> 

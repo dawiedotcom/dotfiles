@@ -1,8 +1,8 @@
 " GUI specific settings
 
 " Colorscheme
-colorscheme slate
-highlight CursorLine guibg=black
+colorscheme rdarktango
+"highlight CursorLine guibg=black
 
 " For a minimalistic gui.
 set guioptions-=T
