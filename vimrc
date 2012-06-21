@@ -38,8 +38,8 @@ let mapleader = ","
 map <Leader>p 	<C-w>w
 " Switching between buffers
 nnoremap <Leader>,     :BufExplorer<CR>
-nnoremap <Leader>.     :bn<CR>
-nnoremap <Leader>'     :bp<CR>
+nnoremap <Leader>.     :tabn<CR>
+nnoremap <Leader>'     :tabp<CR>
 " Move to and change to insert mode
 map <Leader>a 	GA
 map <Leader>o	GO
@@ -79,7 +79,8 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 imap <C-@> <C-Space>
 
 
-map <C-F6> :run ctags -R --c#-kinds=cimnp --fields=+ianmzS --extra=+fq .<CR>
+" map <C-F6> :run ctags -R --c#-kinds=cimnp --fields=+ianmzS --extra=+fq .<CR>
+map <C-F6> :!/usr/bin/ctags -R --c\+\+-kinds=\+p --fields=\+iaS --extra=\+q .<CR>
 
 " automatically reload vimrc when it's saved
 " 	http://vimbits.com/bits/128
