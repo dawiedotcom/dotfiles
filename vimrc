@@ -14,9 +14,11 @@ set shiftwidth=4
 set number                          " Turn line nubering on.
 set backspace=indent,eol,start      " Make backspace sane.
 set hlsearch                        " Highlight search terms.
+set ignorecase						" Set some nice matching wrg to case.
+set smartcase
 set wildmenu						" This is just awesome.
 set winwidth=100					" Set the minimum window width.
-set cursorline
+"set cursorline
 
 " Set the satutus line
 set statusline=%t\ [%Y%M]\ %{fugitive#statusline()}%=LINE:%l/%L
@@ -89,7 +91,7 @@ map <C-F6> :!/usr/bin/ctags -R --c\+\+-kinds=\+p --fields=\+iaS --extra=\+q .<CR
 augroup AutoReloadVimRC
   au!
   " automatically reload vimrc when it's saved
-  au BufWritePost $MYVIMRC so $MYVIMRC
+  au BufWritePost $MYVIMRC source! $MYVIMRC
 augroup END
 
 " Use pathogen
