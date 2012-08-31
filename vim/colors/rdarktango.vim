@@ -18,7 +18,7 @@ if exists("syntax_on")
 	syntax reset
 endif
 
-let colors_name = "rdark"
+let colors_name = "rdarktango"
 
 " Current Line
 "if exists('rdark_current_line') && rdark_current_line == 1

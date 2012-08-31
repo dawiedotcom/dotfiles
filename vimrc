@@ -19,7 +19,7 @@ set smartcase
 set wildmenu						" This is just awesome.
 set winwidth=100					" Set the minimum window width.
 "set cursorline
-
+set shell=/bin/sh					" The root of all eval
 " Set the satutus line
 set statusline=%t\ [%Y%M]\ %{fugitive#statusline()}%=LINE:%l/%L
 
