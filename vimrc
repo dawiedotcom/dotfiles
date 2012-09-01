@@ -97,3 +97,10 @@ augroup END
 " Use pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
+
+" Vimwiki settings
+let wiki = {}
+let wiki.path = '~/Dropbox/vimwiki/text/'
+let wiki.syntax = 'markdown'
+let wiki.ext = '.md'
+let g:vimwiki_list = [wiki]

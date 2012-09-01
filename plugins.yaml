@@ -16,4 +16,4 @@ vim-markdown: "git://github.com/tpope/vim-markdown.git"
 ack.vim: "git://github.com/mileszs/ack.vim.git"
 vim-fugitive: "git://github.com/tpope/vim-fugitive.git"
 vim-scala: "git://github.com/derekwyatt/vim-scala.git"
-
+vimwiki: "git://github.com/vim-scripts/vimwiki.git"
