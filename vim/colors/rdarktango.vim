@@ -27,6 +27,19 @@ let colors_name = "rdarktango"
 "endif
 set nocursorline
 
+" Define color values
+let s:blue		= "#729fcf"
+let s:orange	= "#fcaf3e"
+let s:violet	= "#db7ddd"
+let s:indigo	= "#7056e7"
+let s:green		= "#8ae234"
+"let s:green   = "#67bf38"
+let s:lightGrey = "#babdb6"
+let s:grey		= "#656763"
+let s:darkGrey	= "#3f4b4d"
+let s:black		= "#000000"
+let s:white		= "#ffffff"
+
 " Default Colors
 hi Normal 		guifg=#babdb6 guibg=#1e2426
 hi NonText 		guifg=#2c3032 guibg=#2c3032 gui=none
@@ -81,20 +94,42 @@ hi MatchParen 	guifg=#2e3436 guibg=#fcaf3e
 hi Directory 	guifg=#ffffff
 
 " Syntax
-hi Comment 		guifg=#656763
-hi Constant 	guifg=#8ae234
-hi Number 		guifg=#8ae234
-hi Statement 	guifg=#729fcf gui=none
-hi Identifier 	guifg=#ffffff
-hi PreProc 		guifg=#3f4b4d guibg=#000000
+"hi Comment 		guifg=#656763
+"hi Constant 	guifg=#8ae234
+"hi Number 		guifg=#8ae234
+"hi Statement 	guifg=#729fcf gui=none
+exe "hi Comment			guifg=" .s:grey
+exe "hi Constant		guifg=" .s:green
+exe "hi Number			guifg=" .s:green
+exe "hi Boolean			guifg=" .s:green
+exe "hi Statement		guifg=" .s:orange ." 	gui=none"
+"hi Identifier 	guifg=#ffffff
+"hi PreProc 		guifg=#3f4b4d guibg=#000000
+exe "hi Identifier		guifg=" .s:white
+exe "hi PreProc			guifg=" .s:darkGrey ." 	guibg=" .s:black
 "guifg=#656763 guibg=#111111
-hi Function 	guifg=#fcaf3e
-hi Type 		guifg=#fcaf3e gui=none
+"hi Function 	guifg=#db7ddd
+" #fcaf3e
+"hi Type 		guifg=#fcaf3e gui=none
+exe "hi Function		guifg=" .s:white
+exe "hi Type			guifg=" .s:blue ." 		gui=none"
+exe "hi Keyword			guifg=" .s:blue
 " e3e7df gui=none
-"hi Keyword 		guifg=#eeeeec
-hi Keyword 		guifg=#729fcf gui=none
-hi Special 		guifg=#888a85
+"hi Keyword 			guifg=#eeeeec
+"hi Keyword 			guifg=#729fcf gui=none
+"hi Special 			guifg=#888a85
+exe "hi Special 		guifg=" .s:white
 hi Error 		guifg=#eeeeec guibg=#cc0000
+"hi StorageClass guifg=#729fcf
+exe "hi StorageClass	guifg=" .s:orange
+exe "hi Conditional		guifg=" .s:blue
+exe "hi Repeat			guifg=" .s:blue
+exe "hi Label			guifg=" .s:blue
+
+exe "hi Debug			guifg=" .s:lightGrey ."	guibg=" .s:black
+exe "hi Include			guifg=" .s:indigo ."	guibg=" .s:black
+" Include Normal Boolean
+" C#
 
 " PHP
 hi phpRegionDelimiter guifg=#ad7fa8
