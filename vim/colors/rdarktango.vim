@@ -119,7 +119,7 @@ exe "hi Keyword			guifg=" .s:blue
 "hi Keyword 			guifg=#729fcf gui=none
 "hi Special 			guifg=#888a85
 exe "hi Special 		guifg=" .s:white
-hi Error 		guifg=#eeeeec guibg=#cc0000
+"hi Error 		guifg=#eeeeec guibg=#cc0000
 "hi StorageClass guifg=#729fcf
 exe "hi StorageClass	guifg=" .s:orange
 exe "hi Conditional		guifg=" .s:blue
@@ -128,6 +128,7 @@ exe "hi Label			guifg=" .s:blue
 
 exe "hi Debug			guifg=" .s:lightGrey ."	guibg=" .s:black
 exe "hi Include			guifg=" .s:indigo ."	guibg=" .s:black
+exe "hi Error			guifg=" .s:violet 
 " Include Normal Boolean
 " C#
 
