@@ -18,6 +18,8 @@ set ignorecase						" Set some nice matching wrg to case.
 set smartcase
 set wildmenu						" This is just awesome.
 set winwidth=100					" Set the minimum window width.
+set laststatus=2					" Always show the status line
+set encoding=utf-8					" Unicode
 "set cursorline
 set shell=/bin/sh					" The root of all eval
 " Set the satutus line
@@ -104,3 +106,6 @@ let wiki.path = '~/Dropbox/vimwiki/text/'
 let wiki.syntax = 'markdown'
 let wiki.ext = '.md'
 let g:vimwiki_list = [wiki]
+
+" Powerline
+len g:Powerline_symbols = 'fancy'
