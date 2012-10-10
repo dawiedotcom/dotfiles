@@ -51,7 +51,8 @@ hi Search 		guifg=#2e3436 guibg=#fcaf3e
 hi IncSearch 	guibg=#2e3436 guifg=#fcaf3e
 
 " Window Elements
-hi StatusLine 	guifg=#2e3436 guibg=#babdb6 gui=none
+exec "hi StatusLine		guifg=".s:black		."  guibg=".s:blue	."		gui=none"
+"hi StatusLine 	guifg=#2e3436 guibg=#babdb6 gui=none
 hi StatusLineNC guifg=#2e3436 guibg=#888a85 gui=none
 hi VertSplit 	guifg=#555753 guibg=#888a85 gui=none
 hi Visual 		guibg=#000000
@@ -129,6 +130,7 @@ exe "hi Label			guifg=" .s:blue
 exe "hi Debug			guifg=" .s:lightGrey ."	guibg=" .s:black
 exe "hi Include			guifg=" .s:indigo ."	guibg=" .s:black
 exe "hi Error			guifg=" .s:violet 
+exe "hi Delimiter		guifg=" .s:blue
 " Include Normal Boolean
 " C#
 
