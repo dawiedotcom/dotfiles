@@ -17,6 +17,8 @@ set hlsearch                        " Highlight search terms.
 set ignorecase						" Set some nice matching wrg to case.
 set smartcase
 set wildmenu						" This is just awesome.
+"set wildignore=*.meta
+set wig=*.meta
 set winwidth=100					" Set the minimum window width.
 set laststatus=2					" Always show the status line
 set encoding=utf-8					" Unicode
@@ -109,3 +111,5 @@ let g:vimwiki_list = [wiki]
 
 " Powerline
 "let g:Powerline_symbols = 'fancy'
+"let g:Powerline_colorscheme = 'skwp'
+"let g:Powerline_theme = 'skwp'
