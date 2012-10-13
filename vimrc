@@ -108,4 +108,4 @@ let wiki.ext = '.md'
 let g:vimwiki_list = [wiki]
 
 " Powerline
-len g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
