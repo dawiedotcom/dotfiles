@@ -74,7 +74,8 @@ map <C-k>	<C-w>k
 map <Leader>gs	:Gstatus<CR>
 map <Leader>gc  :Gcommit<CR>
 command Gw		:Gwrite<CR>
-
+" CtrlP shortcut
+map <Leader>e	:CtrlP<CR>
 
 " Map omnicomplete to <C-space> 
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
@@ -93,9 +94,9 @@ map <C-F6> :!/usr/bin/ctags -R --c\+\+-kinds=\+p --fields=\+iaS --extra=\+q .<CR
 " 	https://gist.github.com/1988620
 "au BufWritePost .vimrc so ~/.vimrc
 augroup AutoReloadVimRC
-  au!
-  " automatically reload vimrc when it's saved
-  au BufWritePost $MYVIMRC source! $MYVIMRC
+au!
+" automatically reload vimrc when it's saved
+au BufWritePost $MYVIMRC source! $MYVIMRC
 augroup END
 
 " Use pathogen
