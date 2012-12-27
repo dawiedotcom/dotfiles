@@ -128,6 +128,8 @@ exe "hi Label			guifg=" .s:blue
 
 exe "hi Debug			guifg=" .s:lightGrey ."	guibg=" .s:black
 exe "hi Include			guifg=" .s:indigo ."	guibg=" .s:black
+exe "hi Define			guifg=" .s:blue
+exe "hi Macro			guifg="	.s:blue
 " Include Normal Boolean
 " C#
 
