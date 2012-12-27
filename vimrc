@@ -17,7 +17,11 @@ set hlsearch                        " Highlight search terms.
 set ignorecase						" Set some nice matching wrg to case.
 set smartcase
 set wildmenu						" This is just awesome.
+"set wildignore=*.meta
+set wig=*.meta
 set winwidth=100					" Set the minimum window width.
+set laststatus=2					" Always show the status line
+set encoding=utf-8					" Unicode
 "set cursorline
 set shell=/bin/sh					" The root of all eval
 " Set the satutus line
@@ -70,7 +74,8 @@ map <C-k>	<C-w>k
 map <Leader>gs	:Gstatus<CR>
 map <Leader>gc  :Gcommit<CR>
 command Gw		:Gwrite<CR>
-
+" CtrlP shortcut
+map <Leader>e	:CtrlP<CR>
 
 " Map omnicomplete to <C-space> 
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
@@ -89,9 +94,9 @@ map <C-F6> :!/usr/bin/ctags -R --c\+\+-kinds=\+p --fields=\+iaS --extra=\+q .<CR
 " 	https://gist.github.com/1988620
 "au BufWritePost .vimrc so ~/.vimrc
 augroup AutoReloadVimRC
-  au!
-  " automatically reload vimrc when it's saved
-  au BufWritePost $MYVIMRC source! $MYVIMRC
+au!
+" automatically reload vimrc when it's saved
+au BufWritePost $MYVIMRC source! $MYVIMRC
 augroup END
 
 " Use pathogen
@@ -104,3 +109,8 @@ let wiki.path = '~/Dropbox/vimwiki/text/'
 let wiki.syntax = 'markdown'
 let wiki.ext = '.md'
 let g:vimwiki_list = [wiki]
+
+" Powerline
+"let g:Powerline_symbols = 'fancy'
+"let g:Powerline_colorscheme = 'skwp'
+"let g:Powerline_theme = 'skwp'
