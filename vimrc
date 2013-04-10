@@ -74,6 +74,8 @@ map <C-k>	<C-w>k
 map <Leader>gs	:Gstatus<CR>
 map <Leader>gc  :Gcommit<CR>
 command Gw		:Gwrite<CR>
+" git-gutter short cuts
+map <Leader>gt	:ToggleGitGutter<CR>
 " CtrlP shortcut
 map <Leader>e	:CtrlP<CR>
 
