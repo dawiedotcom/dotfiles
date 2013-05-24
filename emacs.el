@@ -23,7 +23,9 @@
 (defvar packages
   '(clojure-mode
     clojure-test-mode
-    nrepl))
+    nrepl
+    evil
+    quack))
 
 (defun install-missing-packages-p (ps)
   (cond ((not ps) nil)
@@ -41,7 +43,7 @@
 
 ;;;; Setup evil
 
-(add-to-list 'load-path "~/.evil.d/elpa/evil-1.0.1")
+(add-to-list 'load-path "~/.emacs.d/elpa/evil-1.0.2")
 (require 'evil)
 (evil-mode 1)
 
