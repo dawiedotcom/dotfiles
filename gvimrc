@@ -1,7 +1,7 @@
 " GUI specific settings
 
 " Colorscheme
-colorscheme rdarktango
+colorscheme solarized
 "highlight CursorLine guibg=black
 
 " For a minimalistic gui.

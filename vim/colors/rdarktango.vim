@@ -133,6 +133,9 @@ exe "hi Define			guifg=" .s:blue
 exe "hi Macro			guifg="	.s:blue
 exe "hi Error			guifg=" .s:violet 
 exe "hi Delimiter		guifg=" .s:blue
+
+exe "hi VimwikiEqIn		guifg=" .s:white
+exe "hi VimwikiEqInT	guifg=" .s:white
 " Include Normal Boolean
 " C#
 
