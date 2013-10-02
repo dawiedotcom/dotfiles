@@ -122,3 +122,5 @@ let g:vimwiki_list = [wiki]
 let g:Powerline_colorscheme = 'solarized256_dark'
 "let g:Powerline_theme = 'short'
 
+" Make errormarker distinguish between errors and warnings
+let &errorformat="%f:%l:%c: %t%*[^:]:%m,%f:%l: %t%*[^:]:%m," . &errorformat
