@@ -66,6 +66,7 @@
 (require 'my-evil)
 (require 'my-ibuffer)
 (require 'my-theme)
+(require 'my-evil-leader-keys)
 
 ;; Fix unicode in agda-mode
 ;(add-hook 'evil-insert-state-entry-hook
