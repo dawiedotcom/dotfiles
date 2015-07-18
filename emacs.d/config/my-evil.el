@@ -1,4 +1,15 @@
 
+;; Load evil-leader before evil-mode
+(use-package evil-leader
+  :commands (evil-leader-mode global-evil-leader-mode)
+  :ensure evil-leader
+  :demand evil-leader
+  :init
+  (progn
+    (global-evil-leader-mode t)
+    (evil-leader/set-leader ",")))
+
+;; Vim modal editing in Emacs
 (use-package evil
  :ensure evil
  :config

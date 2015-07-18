@@ -63,9 +63,18 @@
 ;(define-key evil-visual-state-map "\C-y" 'yank)
 ;
 ;(evil-ex-define-cmd "W" 'save-buffer)
+
+;; Language modes
+(require 'my-matlab)
+(require 'my-rust)
+(require 'my-lua)
+
 (require 'my-evil)
 (require 'my-ibuffer)
 (require 'my-theme)
+(require 'my-magit)
+
+(require 'my-evil-leader-keys)
 
 ;; Fix unicode in agda-mode
 ;(add-hook 'evil-insert-state-entry-hook
@@ -111,6 +120,8 @@
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
 
+(goto-address)
+
 ;(set-face-attribute 'default nil :font "Droid Sans Mono-10")
 ;(set-face-attribute 'default nil :font "Anonymous Pro-11")
 ;(set-face-attribute 'default nil :font "Source Code Pro-10")
@@ -143,6 +154,6 @@
 (add-hook 'c++-mode-hook 'ddk-cc-style)
 
 ;; Matlab
-(setq auto-mode-alist
-      (cons '("\\.m$" . matlab-mode) auto-mode-alist))
+;(setq auto-mode-alist
+;      (cons '("\\.m$" . matlab-mode) auto-mode-alist))
 
