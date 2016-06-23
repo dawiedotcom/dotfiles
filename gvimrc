@@ -2,6 +2,7 @@
 
 " Colorscheme
 colorscheme solarized
+set background=dark
 "highlight CursorLine guibg=black
 
 " For a minimalistic gui.
